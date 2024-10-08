@@ -1,7 +1,7 @@
 {
   "name": "@kne-template/example",
   "version": "0.1.0",
-  "description": "example初始化模板",
+  "description": "libs example初始化模板",
   "scripts": {
     "init": "husky",
     "build:md": "npx @kne/md-doc",
