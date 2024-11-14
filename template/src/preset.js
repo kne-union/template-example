@@ -23,7 +23,7 @@ const componentsCoreRemote = {
 remoteLoaderPreset({
     remotes: {
         default: componentsCoreRemote, 'components-core': componentsCoreRemote, 'components-iconfont': {
-            ...registry, remote: 'components-iconfont', defaultVersion: '0.1.3'
+            ...registry, remote: 'components-iconfont', defaultVersion: '0.1.8'
         }, '<%=name%>': process.env.NODE_ENV === 'development' ? {
             remote: '<%=name%>', url: '/', tpl: '{{url}}'
         } : {
