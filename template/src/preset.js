@@ -7,20 +7,27 @@ import omit from 'lodash/omit';
 
 window.PUBLIC_URL = process.env.PUBLIC_URL;
 
+// url: 'https://registry.npmmirror.com',
+// tpl: '{{url}}/@kne-components%2f{{remote}}/{{version}}/files/build',
+
+// url: 'https://cdn.jsdelivr.net', tpl: '{{url}}/npm/@kne-components/{{remote}}@{{version}}/build'
+
+const registry = {
+    url: "https://uc.fatalent.cn", tpl: "{{url}}/packages/@kne-components/{{remote}}/{{version}}/build"
+};
+
 const componentsCoreRemote = {
-    remote: "components-core",
-    url: "https://registry.npmmirror.com",
-    tpl: "{{url}}/@kne-components%2f{{remote}}/{{version}}/files/build",
-    defaultVersion: '0.1.10',
+    ...registry, remote: 'components-core', defaultVersion: '0.2.65'
 };
 
 remoteLoaderPreset({
     remotes: {
         default: componentsCoreRemote, 'components-core': componentsCoreRemote, 'components-iconfont': {
-            remote: "components-iconfont",
-            url: "https://registry.npmmirror.com",
-            tpl: "{{url}}/@kne-components%2f{{remote}}/{{version}}/files/build",
-            defaultVersion: '0.1.3',
+            ...registry, remote: 'components-iconfont', defaultVersion: '0.1.3'
+        }, '<%=name%>': process.env.NODE_ENV === 'development' ? {
+            remote: '<%=name%>', url: '/', tpl: '{{url}}'
+        } : {
+            ...registry, remote: '<%=name%>', defaultVersion: process.env.DEFAULT_VERSION
         }
     }
 });
