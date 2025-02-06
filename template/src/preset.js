@@ -17,7 +17,7 @@ const registry = {
 };
 
 const componentsCoreRemote = {
-    ...registry, remote: 'components-core', defaultVersion: '0.2.65'
+    ...registry, remote: 'components-core', defaultVersion: '0.3.0'
 };
 
 remoteLoaderPreset({
