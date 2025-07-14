@@ -5,7 +5,7 @@ import readme from "readme";
 
 const ExampleRoutes = createEntry.ExampleRoutes;
 
-const App = ({ preset, themeToken, ...props }) => {
+const App = ({ globalPreset, ...props }) => {
   return (
       <HashRouter>
         <ExampleRoutes
@@ -17,8 +17,8 @@ const App = ({ preset, themeToken, ...props }) => {
                 title: "首页",
               },
             ]}
-            preset={preset}
-            themeToken={themeToken}
+            preset={globalPreset}
+            themeToken={globalPreset.themeToken}
             readme={readme}
             pageProps={{ menu: null }}
         />
