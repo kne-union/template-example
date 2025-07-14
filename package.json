@@ -1,6 +1,6 @@
 {
   "name": "@kne-template/example",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "libs example初始化模板",
   "scripts": {
     "init": "husky",
