@@ -3,7 +3,6 @@ import { preset as fetchPreset } from '@kne/react-fetch';
 import { Spin, Empty, message } from 'antd';
 import createAjax from '@kne/axios-fetch';
 import { preset as remoteLoaderPreset } from '@kne/remote-loader';
-import omit from 'lodash/omit';
 
 window.PUBLIC_URL = process.env.PUBLIC_URL;
 
