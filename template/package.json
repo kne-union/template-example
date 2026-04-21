@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "dependencies": {
     "@kne/current-lib_<%=name%>": "file:..",
-    "react": "file:../node_modules/react",
-    "react-dom": "file:../node_modules/react-dom"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "files": [
     "build"
@@ -37,6 +37,7 @@
     ]
   },
   "devDependencies": {
+    "@kne/axios-fetch": "^1.1.1",
     "@kne/craco": "^7.1.2",
     "@kne/axios-fetch": "^1.0.7",
     "@kne/modules-dev": "^2.2.1",
