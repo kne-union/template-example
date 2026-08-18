@@ -21,7 +21,7 @@ export const globalInit = async () => {
   });
 
   const componentsCoreRemote = {
-    ...registry, remote: 'components-core', defaultVersion: '0.4.51'
+    ...registry, remote: 'components-core', defaultVersion: '0.5.38'
   };
 
   remoteLoaderPreset({
