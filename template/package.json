@@ -39,9 +39,9 @@
   "devDependencies": {
     "@kne/axios-fetch": "^1.1.1",
     "@kne/craco": "^7.1.2",
-    "@kne/axios-fetch": "^1.0.7",
     "@kne/modules-dev": "^2.2.1",
     "@kne/react-fetch": "^1.4.2",
+    "@kne/react-scripts": "^5.1.6",
     "@kne/remote-loader": "^1.2.3",
     "antd": "^6.3.3",
     "axios": "^1.6.7",
