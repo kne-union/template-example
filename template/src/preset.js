@@ -21,13 +21,13 @@ export const globalInit = async () => {
   });
 
   const componentsCoreRemote = {
-    ...registry, remote: 'components-core', defaultVersion: '0.6.7'
+    ...registry, remote: 'components-core', defaultVersion: '0.7.4'
   };
 
   remoteLoaderPreset({
     remotes: {
       default: componentsCoreRemote, 'components-core': componentsCoreRemote, 'components-iconfont': {
-        ...registry, remote: 'components-iconfont', defaultVersion: '0.2.1'
+        ...registry, remote: 'components-iconfont', defaultVersion: '0.3.0'
       }, '<%=name%>': process.env.NODE_ENV === 'development' ? {
         remote: '<%=name%>', url: '/', tpl: '{{url}}'
       } : {
